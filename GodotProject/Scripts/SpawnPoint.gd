@@ -13,6 +13,7 @@ func _ready():
 
 
 func _input(event):
+	
 	if Input.is_action_just_released("AddObb1"):
 		var newCube = erichsCube.instance()
 		newCube.translation = self.translation

@@ -52,5 +52,5 @@ script = ExtResource( 4 )
 [node name="Classspawner" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.70452, 10.1118 )
 script = ExtResource( 5 )
-
+[connection signal="input_event" from="Ring" to="Classspawner" method="floor_clicked"]
 [connection signal="updated_array" from="Ring" to="Classspawner" method="_on_Ring_updated_array"]

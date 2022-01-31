@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=49 format=2]
 
 [ext_resource path="res://Scenes/Button.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/masterButton.gd" type="Script" id=2]
@@ -29,6 +29,76 @@
 [ext_resource path="res://Materials/Icons/silverbutton.jpg" type="Texture" id=27]
 [ext_resource path="res://Materials/Icons/polkadotbutton.jpg" type="Texture" id=28]
 [ext_resource path="res://Materials/Icons/stripes.jpg" type="Texture" id=29]
+[ext_resource path="res://Scripts/TextureButton.gd" type="Script" id=30]
+[ext_resource path="res://Materials/polkadot3.jpg" type="Texture" id=31]
+[ext_resource path="res://Materials/stripes.jpg" type="Texture" id=32]
+[ext_resource path="res://Materials/rainbowrot.jpg" type="Texture" id=33]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.427451, 0.345098, 0.2, 1 )
+metallic = 0.34
+metallic_specular = 1.0
+roughness = 0.67
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.945098, 0.568627, 0.964706, 1 )
+ao_enabled = true
+ao_light_affect = 0.18
+ao_on_uv2 = true
+ao_texture_channel = 0
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.992157, 0.992157, 0.992157, 1 )
+metallic = 0.74
+roughness = 0.64
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.0745098, 0.0196078, 0.0196078, 1 )
+metallic = 0.59
+metallic_specular = 0.33
+roughness = 0.75
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_color = Color( 0.94902, 0.580392, 0.14902, 1 )
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 0.415686, 0.0980392, 0.760784, 1 )
+emission_enabled = true
+emission = Color( 0.356863, 0.0862745, 0.894118, 1 )
+emission_energy = 1.0
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_color = Color( 0.894118, 0.921569, 0.0666667, 1 )
+
+[sub_resource type="SpatialMaterial" id=8]
+albedo_color = Color( 0.133333, 0.694118, 0.298039, 1 )
+
+[sub_resource type="SpatialMaterial" id=9]
+albedo_color = Color( 0.247059, 0.282353, 0.8, 1 )
+
+[sub_resource type="SpatialMaterial" id=10]
+albedo_color = Color( 0.929412, 0.109804, 0.141176, 1 )
+
+[sub_resource type="SpatialMaterial" id=12]
+albedo_color = Color( 0.882353, 0.694118, 0.184314, 1 )
+metallic = 0.65
+roughness = 0.26
+
+[sub_resource type="SpatialMaterial" id=13]
+albedo_color = Color( 0.603922, 0.603922, 0.603922, 1 )
+metallic = 0.57
+roughness = 0.07
+
+[sub_resource type="SpatialMaterial" id=14]
+albedo_texture = ExtResource( 32 )
+
+[sub_resource type="SpatialMaterial" id=11]
+albedo_texture = ExtResource( 31 )
+
+[sub_resource type="SpatialMaterial" id=15]
+albedo_texture = ExtResource( 33 )
 
 [node name="masterButton" type="Control"]
 margin_left = 31.1095
@@ -84,6 +154,9 @@ margin_right = 54.0
 margin_bottom = 54.0
 size_flags_horizontal = 3
 icon = ExtResource( 6 )
+script = ExtResource( 30 )
+color_name = "brown"
+materiall = SubResource( 1 )
 
 [node name="pinkButton" parent="Color Container" instance=ExtResource( 1 )]
 margin_left = 58.0
@@ -91,6 +164,9 @@ margin_right = 112.0
 margin_bottom = 54.0
 size_flags_horizontal = 3
 icon = ExtResource( 11 )
+script = ExtResource( 30 )
+color_name = "pink"
+materiall = SubResource( 2 )
 
 [node name="whiteButton" parent="Color Container" instance=ExtResource( 1 )]
 margin_left = 116.0
@@ -98,6 +174,9 @@ margin_right = 170.0
 margin_bottom = 54.0
 size_flags_horizontal = 3
 icon = ExtResource( 20 )
+script = ExtResource( 30 )
+color_name = "White"
+materiall = SubResource( 3 )
 
 [node name="blackButton" parent="Color Container" instance=ExtResource( 1 )]
 margin_left = 174.0
@@ -105,6 +184,9 @@ margin_right = 228.0
 margin_bottom = 54.0
 size_flags_horizontal = 3
 icon = ExtResource( 16 )
+script = ExtResource( 30 )
+color_name = "Black"
+materiall = SubResource( 4 )
 
 [node name="orangeButton" parent="Color Container" instance=ExtResource( 1 )]
 margin_left = 232.0
@@ -112,6 +194,9 @@ margin_right = 286.0
 margin_bottom = 54.0
 size_flags_horizontal = 3
 icon = ExtResource( 15 )
+script = ExtResource( 30 )
+color_name = "Orange"
+materiall = SubResource( 5 )
 
 [node name="purpleButton" parent="Color Container" instance=ExtResource( 1 )]
 margin_left = 290.0
@@ -119,6 +204,9 @@ margin_right = 344.0
 margin_bottom = 54.0
 size_flags_horizontal = 3
 icon = ExtResource( 14 )
+script = ExtResource( 30 )
+color_name = "purple"
+materiall = SubResource( 6 )
 
 [node name="yellowButton" parent="Color Container" instance=ExtResource( 1 )]
 margin_left = 348.0
@@ -126,6 +214,9 @@ margin_right = 402.0
 margin_bottom = 54.0
 size_flags_horizontal = 3
 icon = ExtResource( 12 )
+script = ExtResource( 30 )
+color_name = "yellow"
+materiall = SubResource( 7 )
 
 [node name="greenButton" parent="Color Container" instance=ExtResource( 1 )]
 margin_left = 406.0
@@ -133,6 +224,9 @@ margin_right = 460.0
 margin_bottom = 54.0
 size_flags_horizontal = 3
 icon = ExtResource( 13 )
+script = ExtResource( 30 )
+color_name = "green"
+materiall = SubResource( 8 )
 
 [node name="blueButton" parent="Color Container" instance=ExtResource( 1 )]
 margin_left = 464.0
@@ -140,6 +234,9 @@ margin_right = 518.0
 margin_bottom = 54.0
 size_flags_horizontal = 3
 icon = ExtResource( 10 )
+script = ExtResource( 30 )
+color_name = "blue"
+materiall = SubResource( 9 )
 
 [node name="redButton" parent="Color Container" instance=ExtResource( 1 )]
 margin_left = 522.0
@@ -147,6 +244,9 @@ margin_right = 576.0
 margin_bottom = 54.0
 size_flags_horizontal = 3
 icon = ExtResource( 5 )
+script = ExtResource( 30 )
+color_name = "red"
+materiall = SubResource( 10 )
 
 [node name="3D Shape Container" type="HBoxContainer" parent="."]
 anchor_top = 1.0
@@ -252,6 +352,9 @@ margin_right = 54.0
 margin_bottom = 58.0
 size_flags_horizontal = 3
 icon = ExtResource( 26 )
+script = ExtResource( 30 )
+color_name = "gold"
+materiall = SubResource( 12 )
 
 [node name="silverButton" parent="Patterns" instance=ExtResource( 1 )]
 margin_left = 58.0
@@ -259,24 +362,36 @@ margin_right = 112.0
 margin_bottom = 58.0
 size_flags_horizontal = 3
 icon = ExtResource( 27 )
+script = ExtResource( 30 )
+color_name = "silver"
+materiall = SubResource( 13 )
 
 [node name="stripesButton" parent="Patterns" instance=ExtResource( 1 )]
 margin_left = 116.0
 margin_right = 181.0
 margin_bottom = 58.0
 icon = ExtResource( 29 )
+script = ExtResource( 30 )
+color_name = "stripes"
+materiall = SubResource( 14 )
 
 [node name="polkadotButton" parent="Patterns" instance=ExtResource( 1 )]
 margin_left = 185.0
 margin_right = 255.0
 margin_bottom = 58.0
 icon = ExtResource( 28 )
+script = ExtResource( 30 )
+color_name = "polkadot"
+materiall = SubResource( 11 )
 
 [node name="rbowButton" parent="Patterns" instance=ExtResource( 1 )]
 margin_left = 259.0
 margin_right = 313.0
 margin_bottom = 58.0
 icon = ExtResource( 25 )
+script = ExtResource( 30 )
+color_name = "rainbow"
+materiall = SubResource( 15 )
 
 [node name="Controls" type="VBoxContainer" parent="."]
 anchor_left = 1.0
@@ -302,17 +417,6 @@ margin_top = 18.0
 margin_right = 69.0
 margin_bottom = 70.0
 icon = ExtResource( 24 )
-
-[connection signal="pressed" from="Color Container/brownButton" to="." method="_on_brownButton_pressed"]
-[connection signal="pressed" from="Color Container/pinkButton" to="." method="_on_pinkButton_pressed"]
-[connection signal="pressed" from="Color Container/whiteButton" to="." method="_on_whiteButton_pressed"]
-[connection signal="pressed" from="Color Container/blackButton" to="." method="_on_blackButton_pressed"]
-[connection signal="pressed" from="Color Container/orangeButton" to="." method="_on_orangeButton_pressed"]
-[connection signal="pressed" from="Color Container/purpleButton" to="." method="_on_purpleButton_pressed"]
-[connection signal="pressed" from="Color Container/yellowButton" to="." method="_on_yellowButton_pressed"]
-[connection signal="pressed" from="Color Container/greenButton" to="." method="_on_greenButton_pressed"]
-[connection signal="pressed" from="Color Container/blueButton" to="." method="_on_blueButton_pressed"]
-[connection signal="pressed" from="Color Container/redButton" to="." method="_on_redButton_pressed"]
 [connection signal="pressed" from="3D Shape Container/pyramidButton" to="." method="_on_pyramidButton_pressed"]
 [connection signal="pressed" from="3D Shape Container/cylinderButton" to="." method="_on_cylinderButton_pressed"]
 [connection signal="pressed" from="3D Shape Container/sphereButton" to="." method="_on_sphereButton_pressed"]
@@ -324,10 +428,5 @@ icon = ExtResource( 24 )
 [connection signal="pressed" from="2D Shape Container/squareButton" to="." method="_on_squareButton_pressed"]
 [connection signal="pressed" from="2D Shape Container/circleButt" to="." method="_on_circleButt_pressed"]
 [connection signal="pressed" from="2D Shape Container/rectangleButt" to="." method="_on_rectangleButt_pressed"]
-[connection signal="pressed" from="Patterns/goldButton" to="." method="_on_goldButton_pressed"]
-[connection signal="pressed" from="Patterns/silverButton" to="." method="_on_silverButton_pressed"]
-[connection signal="pressed" from="Patterns/stripesButton" to="." method="_on_stripesButton_pressed"]
-[connection signal="pressed" from="Patterns/polkadotButton" to="." method="_on_polkadotButton_pressed"]
-[connection signal="pressed" from="Patterns/rbowButton" to="." method="_on_rbowButton_pressed"]
 [connection signal="pressed" from="Controls/Bigger" to="." method="_on_Bigger_pressed"]
 [connection signal="pressed" from="Controls/clearButton" to="." method="_on_clearButton_pressed"]

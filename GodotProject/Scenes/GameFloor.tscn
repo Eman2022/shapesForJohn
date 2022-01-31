@@ -47,7 +47,6 @@ script = ExtResource( 5 )
 [node name="CollisionShape" type="CollisionShape" parent="Score"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.47905, -0.106762 )
 shape = SubResource( 4 )
-
 [connection signal="input_event" from="." to="." method="_on_Ring_input_event"]
 [connection signal="body_entered" from="Area" to="Area" method="_on_Area_body_entered"]
 [connection signal="body_entered" from="Score" to="Score" method="_on_Score_body_entered"]
