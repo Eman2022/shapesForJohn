@@ -1,0 +1,97 @@
+########taken from score.gd
+
+function to set up text labels and check an array for colors replaced by a global variable
+
+func insert_Surface_Mat_Alb_Array(body):
+	var bodyChildren = body.get_children()
+	var surfaceMaterial = bodyChildren[0].get_surface_material(0)
+	var surfaceMatAlbCol = surfaceMaterial.albedo_color
+	surfaceMatArray.insert(0, surfaceMatAlbCol)
+	emit_signal("update_array", surfaceMatArray)
+	pass
+	
+func Erase_Surface_Mat_Alb_Array(body):
+	var bodyChildren = body.get_children()
+	var surfaceMaterial = bodyChildren[0].get_surface_material(0)
+	var surfaceMatAlbCol = surfaceMaterial.albedo_color
+	surfaceMatArray.erase(surfaceMatAlbCol)
+	emit_signal("update_array", surfaceMatArray)
+	pass
+	
+func _on_Score_body_entered(body):
+	insert_Surface_Mat_Alb_Array(body)
+	pass # Replace with function body.
+
+
+func _on_Score_body_exited(body):
+	Erase_Surface_Mat_Alb_Array(body)
+	pass # Replace with function body.
+
+
+
+
+
+
+
+
+########Taken from masterButton.gd
+
+var newMat = preload("res://Materials/Material.tres")
+var highRough = 0.85
+var new_red = RichTextLabel.new()
+var new_blue = RichTextLabel.new()
+var new_yellow = RichTextLabel.new()
+var labels = [new_red, new_blue]
+var colors = ["Red  ", Color(1.0, 0, 0, 1.0), "Blue  ", Color(0, 0, 1.0, 1.0), new_yellow]
+
+#################This function never worked#######################
+func place_Labels_In_Container(labels):
+	var i = 0
+	while i+1 < labels.size():
+		$VBoxContainer.add_child(labels[i])
+		i+1
+
+
+func set_Rich_Text(colors, name, color, richLabel, surfaceMatArray):
+	if surfaceMatArray.count(colors[color]) >= 1:
+		labels[richLabel].text = (colors[name])
+		$VBoxContainer.add_child(labels[richLabel])
+		labels[richLabel].add_font_override("normal_font", load("res://fonts/scorefont.tres"))
+		labels[richLabel].add_color_override("default_color", colors[color])
+		labels[richLabel].set_custom_minimum_size(Vector2(60,60))
+		labels[richLabel].add_text(str(surfaceMatArray.count(colors[color])))
+	elif surfaceMatArray.count(colors[color]) < 1:
+		labels[richLabel].text = " "
+
+func update_Score_Board(surfaceMatArray):
+		set_Rich_Text(colors, 0, 1, 0, surfaceMatArray)
+		set_Rich_Text(colors, 2, 3, 1, surfaceMatArray)
+
+
+
+
+
+
+
+
+########Taken from Classspawner.gd
+
+func _on_Ring_updated_array(surfaceMatArray):
+	get_node("../UserInterface").update_Score_Board(surfaceMatArray)
+	pass # Replace with function body.
+
+
+
+
+
+
+
+
+
+
+
+########Taken from Ring.gd
+
+func _on_Score_update_array(surfaceMatArray):
+	emit_signal("updated_array", surfaceMatArray)
+	pass # Replace with function body.

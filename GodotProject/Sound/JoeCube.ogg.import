@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/JoeCube.ogg-278aec4cb58b44e0fcec1b40a3b61561.oggstr"
+
+[deps]
+
+source_file="res://Sound/JoeCube.ogg"
+dest_files=[ "res://.import/JoeCube.ogg-278aec4cb58b44e0fcec1b40a3b61561.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

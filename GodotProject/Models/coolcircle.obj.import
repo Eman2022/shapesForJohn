@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/coolcircle.obj-8adb4fb2a45c97812e8505dc06a0b752.mesh"
+
+[deps]
+
+files=[ "res://.import/coolcircle.obj-8adb4fb2a45c97812e8505dc06a0b752.mesh" ]
+
+source_file="res://Models/coolcircle.obj"
+dest_files=[ "res://.import/coolcircle.obj-8adb4fb2a45c97812e8505dc06a0b752.mesh", "res://.import/coolcircle.obj-8adb4fb2a45c97812e8505dc06a0b752.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

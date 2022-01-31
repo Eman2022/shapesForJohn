@@ -1,0 +1,95 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Materials/Black Chips/Chip005_1K_Normal.jpg" type="Texture" id=1]
+[ext_resource path="res://Sound/JoeCube.ogg" type="AudioStream" id=2]
+[ext_resource path="res://Models/crazy cube redo.obj" type="ArrayMesh" id=3]
+
+[sub_resource type="NoiseTexture" id=1]
+
+[sub_resource type="OpenSimplexNoise" id=2]
+
+[sub_resource type="NoiseTexture" id=3]
+noise = SubResource( 2 )
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.192157, 0.0235294, 0.0235294, 1 )
+metallic = 0.19
+metallic_specular = 0.43
+roughness = 0.0
+normal_enabled = true
+normal_scale = 0.99
+normal_texture = ExtResource( 1 )
+rim_enabled = true
+rim = 0.33
+rim_tint = 1.0
+clearcoat_enabled = true
+clearcoat = 1.0
+clearcoat_gloss = 0.17
+ao_enabled = true
+ao_light_affect = 0.74
+ao_on_uv2 = false
+ao_texture_channel = 0
+subsurf_scatter_enabled = true
+subsurf_scatter_strength = 0.66
+detail_enabled = true
+detail_mask = SubResource( 3 )
+detail_blend_mode = 0
+detail_uv_layer = 0
+detail_albedo = SubResource( 1 )
+
+[sub_resource type="SpatialMaterial" id=5]
+albedo_color = Color( 0.756863, 0.729412, 0.835294, 1 )
+roughness = 0.2
+transmission_enabled = true
+transmission = Color( 0.819608, 0.588235, 0.588235, 1 )
+refraction_enabled = true
+refraction_scale = -0.25
+refraction_texture_channel = 0
+proximity_fade_enable = true
+proximity_fade_distance = 1.51
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 0.85098, 0.643137, 0.0823529, 1 )
+emission_enabled = true
+emission = Color( 0.670588, 0.490196, 0.0627451, 1 )
+emission_energy = 7.33
+emission_operator = 0
+emission_on_uv2 = false
+proximity_fade_enable = true
+proximity_fade_distance = 0.65
+
+[sub_resource type="SpatialMaterial" id=7]
+albedo_color = Color( 0.866667, 0.0117647, 0.552941, 1 )
+
+[sub_resource type="BoxShape" id=8]
+
+[node name="RigidBody" type="RigidBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00111675, -0.00899804, -0.00201464 )
+mesh = ExtResource( 3 )
+material/0 = SubResource( 4 )
+material/1 = SubResource( 5 )
+material/2 = SubResource( 6 )
+material/3 = SubResource( 7 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0817815, 1.15594, -0.953379 )
+light_energy = 31.81
+light_specular = 0.51
+omni_range = 1.05163
+
+[node name="OmniLight2" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.23863, 0.980177 )
+light_energy = 20.39
+omni_range = 1.1092
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00098, 0 )
+shape = SubResource( 8 )
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource( 2 )
+unit_db = 5.0
+autoplay = true

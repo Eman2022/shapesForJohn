@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/scenesphere.obj-cb125dd52ff4c60323f172b60410cffb.mesh"
+
+[deps]
+
+files=[ "res://.import/scenesphere.obj-cb125dd52ff4c60323f172b60410cffb.mesh" ]
+
+source_file="res://Models/scenesphere.obj"
+dest_files=[ "res://.import/scenesphere.obj-cb125dd52ff4c60323f172b60410cffb.mesh", "res://.import/scenesphere.obj-cb125dd52ff4c60323f172b60410cffb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

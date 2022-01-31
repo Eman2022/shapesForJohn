@@ -1,0 +1,333 @@
+[gd_scene load_steps=30 format=2]
+
+[ext_resource path="res://Scenes/Button.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/masterButton.gd" type="Script" id=2]
+[ext_resource path="res://Materials/Icons/spheresmall.jpg" type="Texture" id=3]
+[ext_resource path="res://Materials/Icons/cubesmall.jpg" type="Texture" id=4]
+[ext_resource path="res://Materials/Icons/redbutton.png" type="Texture" id=5]
+[ext_resource path="res://Materials/Icons/brownbutton.png" type="Texture" id=6]
+[ext_resource path="res://Materials/Icons/conesmall.jpg" type="Texture" id=7]
+[ext_resource path="res://Materials/Icons/cylindersmall.jpg" type="Texture" id=8]
+[ext_resource path="res://Materials/Icons/pyramidsmall.jpg" type="Texture" id=9]
+[ext_resource path="res://Materials/Icons/bluebutton.png" type="Texture" id=10]
+[ext_resource path="res://Materials/Icons/pinkbutton.png" type="Texture" id=11]
+[ext_resource path="res://Materials/Icons/yellowbutton.png" type="Texture" id=12]
+[ext_resource path="res://Materials/Icons/greenbutton.png" type="Texture" id=13]
+[ext_resource path="res://Materials/Icons/purplebutton.png" type="Texture" id=14]
+[ext_resource path="res://Materials/Icons/orangebutton.png" type="Texture" id=15]
+[ext_resource path="res://Materials/Icons/blackbutton.png" type="Texture" id=16]
+[ext_resource path="res://Materials/Icons/squareicon.jpg" type="Texture" id=17]
+[ext_resource path="res://Materials/Icons/triangleicon.jpg" type="Texture" id=18]
+[ext_resource path="res://Materials/Icons/rectangleicon.jpg" type="Texture" id=19]
+[ext_resource path="res://Materials/Icons/whitebutton.png" type="Texture" id=20]
+[ext_resource path="res://Materials/Icons/staricon.jpg" type="Texture" id=21]
+[ext_resource path="res://Materials/Icons/circleicon.jpg" type="Texture" id=22]
+[ext_resource path="res://Materials/Icons/ovalicon.jpg" type="Texture" id=23]
+[ext_resource path="res://Materials/Icons/clearbutton.png" type="Texture" id=24]
+[ext_resource path="res://Materials/Icons/rainbow.jpg" type="Texture" id=25]
+[ext_resource path="res://Materials/Icons/goldbutton.jpg" type="Texture" id=26]
+[ext_resource path="res://Materials/Icons/silverbutton.jpg" type="Texture" id=27]
+[ext_resource path="res://Materials/Icons/polkadotbutton.jpg" type="Texture" id=28]
+[ext_resource path="res://Materials/Icons/stripes.jpg" type="Texture" id=29]
+
+[node name="masterButton" type="Control"]
+margin_left = 31.1095
+margin_top = 528.061
+margin_right = 1037.11
+margin_bottom = 589.061
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ShapeLabelContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.935
+anchor_top = -8.62
+anchor_right = 0.935
+anchor_bottom = -8.62
+margin_left = -216.611
+margin_top = -164.18
+margin_right = -3.61053
+margin_bottom = -0.179932
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorLabelContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.015
+anchor_top = -8.606
+anchor_right = 0.015
+anchor_bottom = -8.606
+margin_left = -0.264812
+margin_top = -160.977
+margin_right = 223.735
+margin_bottom = 0.0227661
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Color Container" type="HBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -599.0
+margin_top = -54.0
+margin_right = -23.0005
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="brownButton" parent="Color Container" instance=ExtResource( 1 )]
+margin_left = 0.0
+margin_right = 54.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+icon = ExtResource( 6 )
+
+[node name="pinkButton" parent="Color Container" instance=ExtResource( 1 )]
+margin_left = 58.0
+margin_right = 112.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+icon = ExtResource( 11 )
+
+[node name="whiteButton" parent="Color Container" instance=ExtResource( 1 )]
+margin_left = 116.0
+margin_right = 170.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+icon = ExtResource( 20 )
+
+[node name="blackButton" parent="Color Container" instance=ExtResource( 1 )]
+margin_left = 174.0
+margin_right = 228.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+icon = ExtResource( 16 )
+
+[node name="orangeButton" parent="Color Container" instance=ExtResource( 1 )]
+margin_left = 232.0
+margin_right = 286.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+icon = ExtResource( 15 )
+
+[node name="purpleButton" parent="Color Container" instance=ExtResource( 1 )]
+margin_left = 290.0
+margin_right = 344.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+icon = ExtResource( 14 )
+
+[node name="yellowButton" parent="Color Container" instance=ExtResource( 1 )]
+margin_left = 348.0
+margin_right = 402.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+icon = ExtResource( 12 )
+
+[node name="greenButton" parent="Color Container" instance=ExtResource( 1 )]
+margin_left = 406.0
+margin_right = 460.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+icon = ExtResource( 13 )
+
+[node name="blueButton" parent="Color Container" instance=ExtResource( 1 )]
+margin_left = 464.0
+margin_right = 518.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+icon = ExtResource( 10 )
+
+[node name="redButton" parent="Color Container" instance=ExtResource( 1 )]
+margin_left = 522.0
+margin_right = 576.0
+margin_bottom = 54.0
+size_flags_horizontal = 3
+icon = ExtResource( 5 )
+
+[node name="3D Shape Container" type="HBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -55.1892
+margin_right = 286.0
+margin_bottom = -1.18921
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pyramidButton" parent="3D Shape Container" instance=ExtResource( 1 )]
+margin_left = 0.0
+margin_right = 54.0
+margin_bottom = 54.0
+icon = ExtResource( 9 )
+
+[node name="cylinderButton" parent="3D Shape Container" instance=ExtResource( 1 )]
+margin_left = 58.0
+margin_right = 112.0
+margin_bottom = 54.0
+icon = ExtResource( 8 )
+
+[node name="sphereButton" parent="3D Shape Container" instance=ExtResource( 1 )]
+margin_left = 116.0
+margin_right = 170.0
+margin_bottom = 54.0
+icon = ExtResource( 3 )
+
+[node name="cubeButton" parent="3D Shape Container" instance=ExtResource( 1 )]
+margin_left = 174.0
+margin_right = 228.0
+margin_bottom = 54.0
+icon = ExtResource( 4 )
+
+[node name="coneButton" parent="3D Shape Container" instance=ExtResource( 1 )]
+margin_left = 232.0
+margin_right = 286.0
+margin_bottom = 54.0
+icon = ExtResource( 7 )
+
+[node name="2D Shape Container" type="HBoxContainer" parent="."]
+margin_left = -1.0
+margin_top = -71.0
+margin_right = 59.0
+margin_bottom = -9.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="starButt" parent="2D Shape Container" instance=ExtResource( 1 )]
+margin_left = 0.0
+margin_right = 54.0
+margin_bottom = 62.0
+icon = ExtResource( 21 )
+
+[node name="triangleButt" parent="2D Shape Container" instance=ExtResource( 1 )]
+margin_left = 58.0
+margin_right = 112.0
+margin_bottom = 62.0
+icon = ExtResource( 18 )
+
+[node name="ovalButt" parent="2D Shape Container" instance=ExtResource( 1 )]
+margin_left = 116.0
+margin_right = 170.0
+margin_bottom = 62.0
+icon = ExtResource( 23 )
+
+[node name="squareButton" parent="2D Shape Container" instance=ExtResource( 1 )]
+margin_left = 174.0
+margin_right = 228.0
+margin_bottom = 62.0
+icon = ExtResource( 17 )
+
+[node name="circleButt" parent="2D Shape Container" instance=ExtResource( 1 )]
+margin_left = 232.0
+margin_right = 286.0
+margin_bottom = 62.0
+icon = ExtResource( 22 )
+
+[node name="rectangleButt" parent="2D Shape Container" instance=ExtResource( 1 )]
+margin_left = 290.0
+margin_right = 344.0
+margin_bottom = 62.0
+icon = ExtResource( 19 )
+
+[node name="Patterns" type="HBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -322.0
+margin_top = -118.0
+margin_right = -26.0005
+margin_bottom = -60.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="goldButton" parent="Patterns" instance=ExtResource( 1 )]
+margin_left = 0.0
+margin_right = 54.0
+margin_bottom = 58.0
+size_flags_horizontal = 3
+icon = ExtResource( 26 )
+
+[node name="silverButton" parent="Patterns" instance=ExtResource( 1 )]
+margin_left = 58.0
+margin_right = 112.0
+margin_bottom = 58.0
+size_flags_horizontal = 3
+icon = ExtResource( 27 )
+
+[node name="stripesButton" parent="Patterns" instance=ExtResource( 1 )]
+margin_left = 116.0
+margin_right = 181.0
+margin_bottom = 58.0
+icon = ExtResource( 29 )
+
+[node name="polkadotButton" parent="Patterns" instance=ExtResource( 1 )]
+margin_left = 185.0
+margin_right = 255.0
+margin_bottom = 58.0
+icon = ExtResource( 28 )
+
+[node name="rbowButton" parent="Patterns" instance=ExtResource( 1 )]
+margin_left = 259.0
+margin_right = 313.0
+margin_bottom = 58.0
+icon = ExtResource( 25 )
+
+[node name="Controls" type="VBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -56.0005
+margin_top = -585.0
+margin_right = 12.9995
+margin_bottom = -515.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bigger" parent="Controls" instance=ExtResource( 1 )]
+margin_left = 0.0
+margin_right = 69.0
+margin_bottom = 14.0
+
+[node name="clearButton" parent="Controls" instance=ExtResource( 1 )]
+margin_left = 0.0
+margin_top = 18.0
+margin_right = 69.0
+margin_bottom = 70.0
+icon = ExtResource( 24 )
+
+[connection signal="pressed" from="Color Container/brownButton" to="." method="_on_brownButton_pressed"]
+[connection signal="pressed" from="Color Container/pinkButton" to="." method="_on_pinkButton_pressed"]
+[connection signal="pressed" from="Color Container/whiteButton" to="." method="_on_whiteButton_pressed"]
+[connection signal="pressed" from="Color Container/blackButton" to="." method="_on_blackButton_pressed"]
+[connection signal="pressed" from="Color Container/orangeButton" to="." method="_on_orangeButton_pressed"]
+[connection signal="pressed" from="Color Container/purpleButton" to="." method="_on_purpleButton_pressed"]
+[connection signal="pressed" from="Color Container/yellowButton" to="." method="_on_yellowButton_pressed"]
+[connection signal="pressed" from="Color Container/greenButton" to="." method="_on_greenButton_pressed"]
+[connection signal="pressed" from="Color Container/blueButton" to="." method="_on_blueButton_pressed"]
+[connection signal="pressed" from="Color Container/redButton" to="." method="_on_redButton_pressed"]
+[connection signal="pressed" from="3D Shape Container/pyramidButton" to="." method="_on_pyramidButton_pressed"]
+[connection signal="pressed" from="3D Shape Container/cylinderButton" to="." method="_on_cylinderButton_pressed"]
+[connection signal="pressed" from="3D Shape Container/sphereButton" to="." method="_on_sphereButton_pressed"]
+[connection signal="pressed" from="3D Shape Container/cubeButton" to="." method="_on_cubeButton_pressed"]
+[connection signal="pressed" from="3D Shape Container/coneButton" to="." method="_on_coneButton_pressed"]
+[connection signal="pressed" from="2D Shape Container/starButt" to="." method="_on_starButt_pressed"]
+[connection signal="pressed" from="2D Shape Container/triangleButt" to="." method="_on_triangleButt_pressed"]
+[connection signal="pressed" from="2D Shape Container/ovalButt" to="." method="_on_ovalButt_pressed"]
+[connection signal="pressed" from="2D Shape Container/squareButton" to="." method="_on_squareButton_pressed"]
+[connection signal="pressed" from="2D Shape Container/circleButt" to="." method="_on_circleButt_pressed"]
+[connection signal="pressed" from="2D Shape Container/rectangleButt" to="." method="_on_rectangleButt_pressed"]
+[connection signal="pressed" from="Patterns/goldButton" to="." method="_on_goldButton_pressed"]
+[connection signal="pressed" from="Patterns/silverButton" to="." method="_on_silverButton_pressed"]
+[connection signal="pressed" from="Patterns/stripesButton" to="." method="_on_stripesButton_pressed"]
+[connection signal="pressed" from="Patterns/polkadotButton" to="." method="_on_polkadotButton_pressed"]
+[connection signal="pressed" from="Patterns/rbowButton" to="." method="_on_rbowButton_pressed"]
+[connection signal="pressed" from="Controls/Bigger" to="." method="_on_Bigger_pressed"]
+[connection signal="pressed" from="Controls/clearButton" to="." method="_on_clearButton_pressed"]

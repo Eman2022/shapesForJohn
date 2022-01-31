@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/cooloval.obj-071c4b0e13aa501674f7ba6899478347.mesh"
+
+[deps]
+
+files=[ "res://.import/cooloval.obj-071c4b0e13aa501674f7ba6899478347.mesh" ]
+
+source_file="res://Models/cooloval.obj"
+dest_files=[ "res://.import/cooloval.obj-071c4b0e13aa501674f7ba6899478347.mesh", "res://.import/cooloval.obj-071c4b0e13aa501674f7ba6899478347.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

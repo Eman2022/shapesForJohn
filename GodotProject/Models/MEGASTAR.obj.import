@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/MEGASTAR.obj-0a18a96e9e2dbd38ea22fc8584df0580.mesh"
+
+[deps]
+
+files=[ "res://.import/MEGASTAR.obj-0a18a96e9e2dbd38ea22fc8584df0580.mesh" ]
+
+source_file="res://Models/MEGASTAR.obj"
+dest_files=[ "res://.import/MEGASTAR.obj-0a18a96e9e2dbd38ea22fc8584df0580.mesh", "res://.import/MEGASTAR.obj-0a18a96e9e2dbd38ea22fc8584df0580.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

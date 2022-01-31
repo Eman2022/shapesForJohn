@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Erichscube.obj-4e641c7adf7345331533e0b5eaae8861.mesh"
+
+[deps]
+
+files=[ "res://.import/Erichscube.obj-4e641c7adf7345331533e0b5eaae8861.mesh" ]
+
+source_file="res://Models/Erichscube.obj"
+dest_files=[ "res://.import/Erichscube.obj-4e641c7adf7345331533e0b5eaae8861.mesh", "res://.import/Erichscube.obj-4e641c7adf7345331533e0b5eaae8861.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

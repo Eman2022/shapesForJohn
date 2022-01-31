@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/crazy cube redo.obj-76c0c872ae49ba7d1fd758f994dbe03d.mesh"
+
+[deps]
+
+files=[ "res://.import/crazy cube redo.obj-76c0c872ae49ba7d1fd758f994dbe03d.mesh" ]
+
+source_file="res://Models/crazy cube redo.obj"
+dest_files=[ "res://.import/crazy cube redo.obj-76c0c872ae49ba7d1fd758f994dbe03d.mesh", "res://.import/crazy cube redo.obj-76c0c872ae49ba7d1fd758f994dbe03d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

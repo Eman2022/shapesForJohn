@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/triangle.obj-416e27cbd70b42bd5d7c8ff01df2d90d.mesh"
+
+[deps]
+
+files=[ "res://.import/triangle.obj-416e27cbd70b42bd5d7c8ff01df2d90d.mesh" ]
+
+source_file="res://Models/triangle.obj"
+dest_files=[ "res://.import/triangle.obj-416e27cbd70b42bd5d7c8ff01df2d90d.mesh", "res://.import/triangle.obj-416e27cbd70b42bd5d7c8ff01df2d90d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

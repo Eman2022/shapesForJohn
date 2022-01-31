@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/coolsquare.obj-be4930a46538fa4189ad0b5005d6cfc6.mesh"
+
+[deps]
+
+files=[ "res://.import/coolsquare.obj-be4930a46538fa4189ad0b5005d6cfc6.mesh" ]
+
+source_file="res://Models/coolsquare.obj"
+dest_files=[ "res://.import/coolsquare.obj-be4930a46538fa4189ad0b5005d6cfc6.mesh", "res://.import/coolsquare.obj-be4930a46538fa4189ad0b5005d6cfc6.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

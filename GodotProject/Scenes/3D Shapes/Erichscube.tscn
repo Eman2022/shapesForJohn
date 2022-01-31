@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Models/Erichscube.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Materials/BlackChips.tres" type="Material" id=2]
+[ext_resource path="res://Materials/Leaves.tres" type="Material" id=3]
+[ext_resource path="res://Sound/ErichSound.ogg" type="AudioStream" id=4]
+
+[sub_resource type="BoxShape" id=1]
+
+[node name="ErichsCube" type="RigidBody"]
+
+[node name="Mesh" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00378084, 0.000188529, -0.0403351 )
+mesh = ExtResource( 1 )
+material/0 = ExtResource( 2 )
+material/1 = ExtResource( 2 )
+material/2 = ExtResource( 2 )
+material/3 = ExtResource( 2 )
+material/4 = ExtResource( 2 )
+material/5 = ExtResource( 2 )
+material/6 = ExtResource( 2 )
+material/7 = ExtResource( 2 )
+material/8 = ExtResource( 2 )
+material/9 = ExtResource( 2 )
+material/10 = ExtResource( 2 )
+material/11 = ExtResource( 2 )
+material/12 = ExtResource( 2 )
+material/13 = ExtResource( 3 )
+material/14 = ExtResource( 3 )
+
+[node name="Collider" type="CollisionShape" parent="."]
+shape = SubResource( 1 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.31851, 0.0334438, -0.166768 )
+light_color = Color( 1, 0.00784314, 0.00784314, 1 )
+light_energy = 20.0
+shadow_enabled = true
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource( 4 )
+unit_db = 3.0
+autoplay = true

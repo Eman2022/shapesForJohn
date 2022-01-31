@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/pyrwmap.obj-b63b0c7fe022b3b2dc30c279c98e172b.mesh"
+
+[deps]
+
+files=[ "res://.import/pyrwmap.obj-b63b0c7fe022b3b2dc30c279c98e172b.mesh" ]
+
+source_file="res://Models/pyrwmap.obj"
+dest_files=[ "res://.import/pyrwmap.obj-b63b0c7fe022b3b2dc30c279c98e172b.mesh", "res://.import/pyrwmap.obj-b63b0c7fe022b3b2dc30c279c98e172b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/John-sound.ogg-4cf7efd19c778b4297230c249b450e49.oggstr"
+
+[deps]
+
+source_file="res://Sound/John-sound.ogg"
+dest_files=[ "res://.import/John-sound.ogg-4cf7efd19c778b4297230c249b450e49.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
